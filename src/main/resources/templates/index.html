@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ml-auto" id="myDIV">
                 <li class="nav-item">
-                    <a class="nav-link einfuer" href="#">Suche </a>
+                    <a class="nav-link einfuer" href="#such">Suche </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link anwendun" href="#">Registrieren</a>
+                    <a class="nav-link anwendun" href="/register">Registrieren</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/implementierung">Einloggen</a>
+                    <a class="nav-link" href="/loggin">Einloggen</a>
                 </li>
 
             </ul>
@@ -79,8 +79,8 @@
     </h2>
 </div>
 
-<div class="suche">
-<!--    <div class="test"></div>-->
+<div class="suche" id="such">
+    <!--    <div class="test"></div>-->
     <div class="container">
         <div class="rideSearch">
             <div class="input-group mb-3">
@@ -124,21 +124,17 @@
 <!-- span class="glyphicon glyphicon-name"></span -->
 
 <!-- Start Footer -->
-<div class="footer">
+<footer class="bd-footer text-muted">
     <div class="container">
-        <div class="social">
-            <ul>
-                <li><img src="images/twitter.png" style="height:26px; width:26px;"/></li>
-                <li><img src="images/snapchat.png" style="height:26px; width:26px;" alt=""/></li>
-                <li><img src="images/linkedin.png" style="height:26px; width:26px;" alt=""/></li>
-                <li><img src="images/facebook.png" style="height:26px; width:26px;" alt=""/></li>
-            </ul>
-
-        </div>
-
-        <span> Copyright &copy; 2017 Yassine Chakri Inc.</span>
+        <ul class="bd-footer-links">
+            <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/references">References</a></li>
+            <li><a href="/impressum">Imprint</a></li>
+        </ul>
+        <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
     </div>
-</div>
+</footer>
 <!-- End Footer -->
 
 <script src="js/jquery-3.4.0.min.js"></script>

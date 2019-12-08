@@ -10,5 +10,14 @@ public class WebAppController {
     public String index() {
         return "index";
     }
+    @GetMapping("/register")
+    public String register() {
+        return "registrieren";
+    }
+
+    @GetMapping("/loggin")
+    public String loggin() {
+        return "loggin";
+    }
 
 }
